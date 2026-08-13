@@ -79,10 +79,10 @@ function ProjectsPage() {
             {projects.map((project, index) => (
               <article
                 key={project.id}
-                className={`animate-reveal grid gap-8 lg:grid-cols-2 ${
+                className={`grid gap-8 lg:grid-cols-2 ${
                   index % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
-                style={{ animationDelay: `${index * 100}ms` }}
+               
               >
                 <div className={`overflow-hidden bg-muted ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <img

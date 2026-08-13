@@ -88,8 +88,8 @@ function ServicesPage() {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="animate-reveal border-t border-border pt-8"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="border-t border-border pt-8"
+               
               >
                 <span className="mb-6 block text-[11px] font-mono uppercase tracking-widest text-primary">
                   {service.number} / {service.title}

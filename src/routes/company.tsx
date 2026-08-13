@@ -67,7 +67,7 @@ function CompanyPage() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-2">
-            <div className="animate-reveal overflow-hidden bg-muted">
+            <div className="overflow-hidden bg-muted">
               <img
                 src={companyImage}
                 alt="Aurelian project team reviewing architectural drawings"
@@ -77,7 +77,7 @@ function CompanyPage() {
                 loading="lazy"
               />
             </div>
-            <div className="animate-reveal animation-delay-100 flex flex-col justify-center">
+            <div className=" flex flex-col justify-center">
               <h2 className="mb-6 text-3xl font-bold tracking-tight">A practice led by making.</h2>
               <p className="mb-6 leading-relaxed text-muted-foreground">
                 Our leadership team includes architects, structural engineers, and master builders who
@@ -99,8 +99,8 @@ function CompanyPage() {
             {stats.map((stat, index) => (
               <div
                 key={stat.label}
-                className="animate-reveal border-t border-border pt-6"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="border-t border-border pt-6"
+               
               >
                 <div className="text-4xl font-black tracking-tighter">{stat.value}</div>
                 <div className="mt-2 text-[11px] font-mono uppercase tracking-widest text-muted-foreground">
@@ -125,7 +125,7 @@ function CompanyPage() {
               <div
                 key={value.title}
                 className="animate-reveal"
-                style={{ animationDelay: `${index * 100}ms` }}
+               
               >
                 <h3 className="mb-4 text-2xl font-bold tracking-tight">{value.title}</h3>
                 <p className="text-sm leading-relaxed text-background/60">{value.text}</p>

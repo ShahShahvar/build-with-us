@@ -109,7 +109,7 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="animate-reveal animation-delay-100">
+            <div className="">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-2 gap-6">
                   <FormField

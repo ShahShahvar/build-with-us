@@ -78,7 +78,7 @@ function HomePage() {
       <section className="relative overflow-hidden pt-20 pb-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-end gap-12 lg:grid-cols-12">
-            <div className="animate-reveal lg:col-span-8">
+            <div className="lg:col-span-8">
               <h1 className="mb-12 text-balance text-6xl font-black leading-[0.85] tracking-tighter md:text-8xl lg:text-9xl">
                 BUILDING FOR
                 <br />
@@ -89,7 +89,7 @@ function HomePage() {
                 architectural builds and large-scale residential infrastructure.
               </p>
             </div>
-            <div className="animate-reveal animation-delay-200 lg:col-span-4">
+            <div className=" lg:col-span-4">
               <div className="relative aspect-[4/5] overflow-hidden bg-muted">
                 <img
                   src={heroDetail}
@@ -130,8 +130,8 @@ function HomePage() {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`group animate-reveal ${index === 1 ? "md:mt-24" : ""}`}
-                style={{ animationDelay: `${300 + index * 100}ms` }}
+                className={`group ${index === 1 ? "md:mt-24" : ""}`}
+               
               >
                 <Link to="/projects" className="block overflow-hidden bg-muted">
                   <img
@@ -166,7 +166,7 @@ function HomePage() {
               <div
                 key={service.title}
                 className="animate-reveal"
-                style={{ animationDelay: `${index * 100}ms` }}
+               
               >
                 <span className="mb-6 block text-[11px] font-mono uppercase tracking-widest text-primary/80">
                   {service.number} / {service.title}
