@@ -53,12 +53,27 @@ function ContactPage() {
     },
   });
 
-  function onSubmit(data: FormValues) {
+  async function onSubmit(data: FormValues) {
+    const { error } = await supabase.from("contact_submissions").insert({
+      name: data.name,
+      email: data.email,
+      project_type: data.projectType,
+      message: data.message,
+    });
+
+    if (error) {
+      toast.error("Submission failed", {
+        description: "We couldn't save your enquiry. Please try again or email us directly.",
+      });
+      return;
+    }
+
     toast.success("Proposal received", {
       description: `Thanks, ${data.name}. We'll respond to ${data.email} within two business days.`,
     });
     form.reset();
   }
+
 
   return (
     <main>
