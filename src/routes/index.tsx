@@ -165,7 +165,7 @@ function HomePage() {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="animate-reveal"
+                className=""
                
               >
                 <span className="mb-6 block text-[11px] font-mono uppercase tracking-widest text-primary/80">

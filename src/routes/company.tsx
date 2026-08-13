@@ -124,7 +124,7 @@ function CompanyPage() {
             {values.map((value, index) => (
               <div
                 key={value.title}
-                className="animate-reveal"
+                className=""
                
               >
                 <h3 className="mb-4 text-2xl font-bold tracking-tight">{value.title}</h3>

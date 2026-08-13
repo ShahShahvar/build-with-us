@@ -78,7 +78,7 @@ function ContactPage() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-24 lg:grid-cols-2">
-            <div className="animate-reveal">
+            <div className="">
               <div className="space-y-8">
                 <div>
                   <span className="mb-2 block text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
