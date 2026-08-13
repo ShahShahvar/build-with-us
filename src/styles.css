@@ -151,3 +151,17 @@
 @utility animation-delay-500 {
   animation-delay: 500ms;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-reveal,
+  .animation-delay-100,
+  .animation-delay-200,
+  .animation-delay-300,
+  .animation-delay-400,
+  .animation-delay-500 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
