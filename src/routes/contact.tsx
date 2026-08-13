@@ -122,11 +122,12 @@ function ContactPage() {
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="NAME"
-                            className="rounded-none border-0 border-b border-border bg-transparent px-0 py-4 font-mono text-[12px] focus-visible:ring-0 focus-visible:ring-offset-0"
+                            placeholder="Your name"
+                            className="rounded-none border-0 border-b border-border bg-transparent px-0 py-4 font-mono text-[12px] shadow-none focus-visible:ring-0 focus-visible:ring-offset-0"
                             {...field}
                           />
                         </FormControl>
+
                         <FormMessage />
                       </FormItem>
                     )}
